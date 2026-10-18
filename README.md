@@ -23,6 +23,13 @@ I like taking something from idea to a finished, shippable tool — and porting 
 ### Latest repositories
 
 <!-- RECENT:START -->
+| Repository | Description | Language | Created |
+| --- | --- | --- | --- |
+| [**subtitle-pro**](https://github.com/noms6/subtitle-pro) | Altyazı ve belgeleri toplu çevir, zaman damgaları korunur — 37 arayüz dili · Batch-translate SRT/VTT subtitles & documents, timestamps preserved | Python | 2026-10-15 |
+| [**pixel-art-video**](https://github.com/noms6/pixel-art-video) | Videonu pixel art, çiçek mozaiği veya ASCII'ye dönüştür, mesajını ekle ve paylaş — 24 dil · Turn videos into pixel art, flower mosaics & ASCII art | Python | 2026-10-15 |
+| [**KozmetikTanitimSitev2**](https://github.com/noms6/KozmetikTanitimSitev2) | Kozmetik sitesi şablonu | JavaScript | 2025-05-26 |
+| [**KozmetikTanitimSitesi**](https://github.com/noms6/KozmetikTanitimSitesi) | Bu bir Kozmetik satın alma sitesi örneğidir | JavaScript | 2025-05-23 |
+| [**ExceltoSql**](https://github.com/noms6/ExceltoSql) | Excel (Asp .Net) to Sql | C# | 2024-11-04 |
 <!-- RECENT:END -->
 
 ### Tech I work with
