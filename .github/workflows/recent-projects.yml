@@ -1,0 +1,39 @@
+name: Update latest repositories
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day at 06:17 Istanbul time
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/update_recent.py"
+      - ".github/workflows/recent-projects.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild the latest repositories block
+        run: python3 .github/scripts/update_recent.py
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LIMIT: "6"
+          EXCLUDE: "Sks,SubuBase-dev-berk"
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet; then
+            echo "README already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update latest repositories"
+          git push
