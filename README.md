@@ -20,6 +20,11 @@ I like taking something from idea to a finished, shippable tool — and porting 
 | **nms NitroPlay** | Game HUD, game mode, ping test and sensitivity studio for mobile shooters. | Kotlin · Android |
 | [**ExceltoSql**](https://github.com/noms6/ExceltoSql) | Import Excel sheets straight into SQL Server. | C# · ASP.NET |
 
+### Latest repositories
+
+<!-- RECENT:START -->
+<!-- RECENT:END -->
+
 ### Tech I work with
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
